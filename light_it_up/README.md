@@ -1,3 +1,20 @@
+# How to run the code
+
+On terminal 1:
+```
+cd light_it_up/mdbook/src/05-meet-your-software
+cargo embed --example light-it-up
+```
+On terminal 2:
+```
+cd light_it_up/mdbook/src/05-meet-your-software
+gdb-multiarch ../../../target/thumbv7em-none-eabihf/debug/examples/light-it-up
+(gdb) target remote :1337
+(gdb) break main
+(gdb) continue
+(gdb) quit
+```
+
 # `micro::bit v2 Embedded Discovery Book`
 
 The published text of this book is at
