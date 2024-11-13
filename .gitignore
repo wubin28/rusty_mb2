@@ -60,3 +60,6 @@ yarn-error.log*
 
 # Local configuration files
 config.local.toml
+
+# gdb history file
+**/.gdb_history
